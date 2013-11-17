@@ -59,6 +59,8 @@ object LoginPage extends Controller
     }
   }
 
+
+  // TODO: where would the persona js be included to log out of that provider?
   /**
    * Logs out the user by clearing the credentials from the session.
    * The browser is redirected either to the login page or to the page specified in the onLogoutGoTo property.

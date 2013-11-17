@@ -16,6 +16,10 @@
                 }
             }
 
+            @if( provider.authMethod == Persona ) {
+                <a href="#" onclick="navigator.id.request"><img srv="@RoutesHelper.at(imageUrl)"/></a>
+            }
+
             @if( provider.authMethod == UserPassword ) {
                 <form action = "@securesocial.core.providers.utils.RoutesHelper.authenticateByPost("userpass").absoluteURL(IdentityProvider.sslEnabled)"
                       class="form-horizontal" autocomplete="off" method="POST">
